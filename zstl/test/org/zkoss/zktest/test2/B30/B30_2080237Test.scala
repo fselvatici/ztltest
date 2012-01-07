@@ -40,7 +40,7 @@ class B30_2080237Test extends ZTL4ScalaTestCase {
       // Click the button
       click(jq("button"));
 
-      // Verify that the zkoss page is opened by verifying the existence of the "Demo" button
+      // Verify that the zkoss page is not opened by verifying the existence of the "Demo" button
       verifyFalse("The page www.zkoss.org should not be visible", getWebDriver().findElement(By.cssSelector(".button-demo")).isDisplayed());
     })
   }
